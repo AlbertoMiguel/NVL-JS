@@ -15,25 +15,23 @@ var agenda=[];
 //split de los datos según su separador
 var dias_semana=(semana.split(","));
 var dias_concierto=(concierto.split("."));
-
+//comprobacion de la separación de los datos
 alert(dias_semana);
 alert(dias_concierto);
 
 for(var i = 0; i < dias_concierto.length; i++){
 	alert(dias_concierto[i]); 
 	alert(dias_semana[i]);
-	//comprobada que la iteracion hasta aquí finciona.
+	//comprobaciones que la iteracion hasta aquí finciona.
 	agenda.push(dias_semana[i],dias_concierto[i]);
 }
-
+//comprobacion que la iteracion guarda los datos y los muestra en el orden requerido
 alert(agenda);
 
 
 //bucle de prueba para repetir la misma operacion, y mientras la longitud de ambos arrays sea distinto de 0 se repita.
-/*while ((dias_concierto.length&&dias_semana.length)!=0){
-	agenda.push({
-		dias_semana[i], dias_concierto[i]
-	});
+/*while ((var i =(dias_concierto.length&&dias_semana.length)!=0){
+	agenda.push(dias_semana[i], dias_concierto[i]);		
 };*/
 
 </script>	
